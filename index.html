@@ -3,31 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Simple Website</title>
+    <title>Your Updated Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
+            padding: 0;
+            margin: 0;
+            background-color: #f4f4f4;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        iframe {
+        h1 {
+            font-size: 36px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 28px;
+            color: #555555;
+            margin-top: 20px;
+        }
+        video {
             width: 100%;
-            max-width: 600px;
-            height: 400px;
+            max-width: 700px;
             margin: 20px 0;
+            border-radius: 10px;
         }
         a {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px;
+            font-size: 18px;
             background-color: #007BFF;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
+            transition: background-color 0.3s ease;
         }
         a:hover {
             background-color: #0056b3;
@@ -36,17 +54,22 @@
 </head>
 <body>
     <div class="container">
-        <h1>VIN-N</h1>
+        <h1>VIN-N: Welcome to My Updated Website</h1>
         
-        <h2>Arabic Video</h2>
-        <iframe src="https://www.youtube.com/embed/Jr3aTHMeIB0" frameborder="0" allowfullscreen></iframe>
+        <h2>Featured Video 1</h2>
+        <video controls>
+            <source src="https://youtu.be/Jr3aTHMeIB0" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <h2>English Video</h2>
-        <iframe src="https://www.youtube.com/embed/BpBM5VuBXTM" frameborder="0" allowfullscreen></iframe>
+        <h2>Featured Video 2</h2>
+        <video controls>
+            <source src="https://youtu.be/BpBM5VuBXTM" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <h2>Visit this Link</h2>
-       <a href="https://www.surveymonkey.com/r/39CTPX2" target="_blank" style="font-size: 24px; padding: 15px 25px;">Click here to take the survey</a>
-
+        <h2>Survey Link</h2>
+        <a href="https://www.surveymonkey.com/r/39CTPX2" target="_blank">Click here to take the survey</a>
     </div>
 </body>
 </html>
